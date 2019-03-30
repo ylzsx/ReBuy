@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_s1">4dp</dimen>
+    <dimen name="margin_s2">8dp</dimen>
+    <dimen name="margin_s3">12dp</dimen>
+
+    <dimen name="width_s40">160dp</dimen>
+    <dimen name="width_s55">220dp</dimen>
+    <dimen name="width_s70">280dp</dimen>
+    <dimen name="width_s8">32dp</dimen>
+
+    <dimen name="height_s40">160dp</dimen>
+    <dimen name="height_s9">36dp</dimen>
+
+    <dimen name="size_3s">12sp</dimen>
+    <dimen name="size_4s">16sp</dimen>
+</resources>

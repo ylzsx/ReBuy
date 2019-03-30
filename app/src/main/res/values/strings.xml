@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ReBuy</string>
+
+    <!--引导界面-->
+    <string name="desc_logo">NEUQ校园二手交易平台</string>
+    <string name="footer_content">Copyright © 2016 NEUQer团队. All rights reserved.</string>
+
+    <!--登录界面-->
+    <string name="hint_account">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+</resources>
