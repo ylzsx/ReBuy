@@ -14,4 +14,5 @@
 
     <dimen name="size_3s">12sp</dimen>
     <dimen name="size_4s">16sp</dimen>
+    <dimen name="size_5s">20sp</dimen>
 </resources>

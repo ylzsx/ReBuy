@@ -73,6 +73,25 @@
 
     <LinearLayout
         android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="0dp"></LinearLayout>
+        android:layout_height="0dp">
+        <Button
+            android:layout_margin="@dimen/margin_s1"
+            android:background="@drawable/shape_btn_login"
+            android:text="@string/btn_login"
+            android:textSize="@dimen/size_5s"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/width_s70"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_margin="@dimen/margin_s1"
+            android:background="@drawable/shape_btn_register"
+            android:text="@string/btn_register"
+            android:textSize="@dimen/size_5s"
+            android:textColor="@color/yellow"
+            android:layout_width="@dimen/width_s70"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 </LinearLayout>
