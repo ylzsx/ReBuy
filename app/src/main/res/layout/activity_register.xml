@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <ImageView
@@ -27,7 +27,7 @@
 
     <LinearLayout
         android:gravity="center"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="0dp">
@@ -71,31 +71,51 @@
                 android:layout_width="@dimen/width_s55"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_s1"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/width_s70"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="@dimen/margin_s1"
+                android:background="@drawable/ic_lock"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s9"/>
+            <EditText
+                android:id="@+id/edt_confirm_password"
+                android:hint="@string/hint_confirm_password"
+                android:inputType="textPassword"
+                android:theme="@style/MyEditText"
+                android:layout_width="@dimen/width_s55"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_weight="1"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <Button
-            android:id="@+id/btn_login"
-            android:layout_margin="@dimen/margin_s1"
-            android:background="@drawable/shape_btn_login"
-            android:text="@string/btn_login"
+            android:id="@+id/btn_cancel"
+            android:layout_margin="@dimen/margin_s2"
+            android:background="@drawable/shape_btn_register"
+            android:text="@string/btn_cancel"
             android:textSize="@dimen/size_5s"
-            android:textColor="@color/white"
-            android:layout_width="@dimen/width_s70"
+            android:textColor="@color/yellow"
+            android:layout_width="@dimen/width_s30"
             android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btn_register"
-            android:layout_margin="@dimen/margin_s1"
-            android:background="@drawable/shape_btn_register"
+            android:layout_margin="@dimen/margin_s2"
+            android:background="@drawable/shape_btn_login"
             android:text="@string/btn_register"
             android:textSize="@dimen/size_5s"
-            android:textColor="@color/yellow"
-            android:layout_width="@dimen/width_s70"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/width_s30"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 </LinearLayout>

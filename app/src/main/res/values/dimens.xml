@@ -4,6 +4,7 @@
     <dimen name="margin_s2">8dp</dimen>
     <dimen name="margin_s3">12dp</dimen>
 
+    <dimen name="width_s30">120dp</dimen>
     <dimen name="width_s40">160dp</dimen>
     <dimen name="width_s55">220dp</dimen>
     <dimen name="width_s70">280dp</dimen>

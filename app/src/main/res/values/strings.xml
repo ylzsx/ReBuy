@@ -10,4 +10,8 @@
     <string name="hint_password">请输入密码</string>
     <string name="btn_login">登录</string>
     <string name="btn_register">注册</string>
+
+    <!--取消界面-->
+    <string name="btn_cancel">取消</string>
+    <string name="hint_confirm_password">请确认密码</string>
 </resources>
