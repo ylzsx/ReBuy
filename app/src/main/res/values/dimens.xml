@@ -4,12 +4,18 @@
     <dimen name="margin_s2">8dp</dimen>
     <dimen name="margin_s3">12dp</dimen>
 
+    <dimen name="padding_s1">4dp</dimen>
+
+    <dimen name="width_1">1dp</dimen>
     <dimen name="width_s30">120dp</dimen>
     <dimen name="width_s40">160dp</dimen>
     <dimen name="width_s55">220dp</dimen>
     <dimen name="width_s70">280dp</dimen>
     <dimen name="width_s8">32dp</dimen>
 
+    <dimen name="height_s8">32dp</dimen>
+    <dimen name="height_s12">48dp</dimen>
+    <dimen name="height_14">56dp</dimen>
     <dimen name="height_s40">160dp</dimen>
     <dimen name="height_s9">36dp</dimen>
 

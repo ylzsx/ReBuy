@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.rebuy.R;
-import com.example.rebuy.business.main.MainActivity;
+import com.example.rebuy.business.main.activity.MainActivity;
 import com.example.rebuy.business.account.model.User;
 import com.example.rebuy.commom.CacheKey;
 
@@ -44,13 +44,13 @@ public class LoginActivity extends AppCompatActivity {
         Connector.getDatabase();
 
         // 判断是否有登录记录
-//        SharedPreferences preferences = getSharedPreferences(CacheKey.FILE_NAME, MODE_PRIVATE);
-//        String token = preferences.getString(CacheKey.TOKEN, "");
-//        if (!"".equals(token)) {
-//            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//            startActivity(intent);
-//            finish();
-//        }
+        SharedPreferences preferences = getSharedPreferences(CacheKey.FILE_NAME, MODE_PRIVATE);
+        String token = preferences.getString(CacheKey.TOKEN, "");
+        if (!"".equals(token)) {
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     @OnClick({R.id.btn_login, R.id.btn_register})

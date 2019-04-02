@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.rebuy.R;
-import com.example.rebuy.business.main.MainActivity;
+import com.example.rebuy.business.main.activity.MainActivity;
 import com.example.rebuy.business.account.model.User;
 import com.example.rebuy.commom.CacheKey;
 

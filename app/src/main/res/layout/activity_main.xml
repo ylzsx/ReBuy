@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".business.main.MainActivity">
+    tools:context=".business.main.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <com.example.rebuy.TitleLayout
+        android:id="@+id/tlayout"
+        app:isShowBack="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s12"/>
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/llayout_footer"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_s1"
+        android:background="@drawable/shape_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_14"/>
+
+</LinearLayout>

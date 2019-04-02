@@ -10,7 +10,7 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".business.main.MainActivity">
+        <activity android:name=".business.main.activity.MainActivity">
         </activity>
         <activity android:name=".business.account.activity.SplashActivity">
             <intent-filter>
