@@ -22,7 +22,7 @@
             android:layout_marginTop="@dimen/margin_s3"
             android:layout_below="@id/img_logo"
             android:text="@string/desc_logo"
-            android:textSize="@dimen/size_4s"
+            android:textSize="@dimen/size_s4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

@@ -5,10 +5,129 @@
              android:layout_height="match_parent"
              tools:context=".business.main.fragment.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
+        android:layout_height="match_parent">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s45" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s12">
+
+            <LinearLayout
+                android:id="@+id/llayout_look_around"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_look_around"
+                    android:layout_margin="@dimen/margin_s2"
+                    android:layout_width="@dimen/width_s6"
+                    android:layout_height="@dimen/height_s6"/>
+                <TextView
+                    android:text="@string/txt_look_around"
+                    android:textSize="@dimen/size_s5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/llayout_goods_delivered"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/icon_goods_delivered"
+                    android:layout_margin="@dimen/margin_s2"
+                    android:layout_width="@dimen/width_s6"
+                    android:layout_height="@dimen/height_s6"/>
+                <TextView
+                    android:text="@string/txt_goods_delivered"
+                    android:textSize="@dimen/size_s5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/light_grey"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s6">
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_s6"
+                android:layout_marginRight="@dimen/margin_s1"
+                android:src="@drawable/icon_wonderful_activity"
+                android:layout_width="@dimen/width_s4"
+                android:layout_height="@dimen/height_s4"/>
+            <TextView
+                android:text="@string/txt_wonderful_activity"
+                android:textSize="@dimen/size_s3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@drawable/icon_festival"
+                android:layout_width="@dimen/width_s35"
+                android:layout_height="@dimen/height_s35">
+                <LinearLayout
+                    android:padding="@dimen/padding_s2"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:background="@color/black_alpha"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_s13">
+                    <TextView
+                        android:text="@string/txt_festival"
+                        android:textSize="@dimen/size_s3"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="@string/txt_rebuy_festival"
+                        android:textSize="@dimen/size_s4"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/light_grey"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s6">
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_s6"
+                android:layout_marginRight="@dimen/margin_s1"
+                android:src="@drawable/icon_guess_like"
+                android:layout_width="@dimen/width_s4"
+                android:layout_height="@dimen/height_s4"/>
+            <TextView
+                android:text="@string/txt_guess_like"
+                android:textSize="@dimen/size_s3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

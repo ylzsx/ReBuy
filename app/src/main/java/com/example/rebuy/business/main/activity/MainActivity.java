@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 
 import com.example.rebuy.R;
-import com.example.rebuy.TitleLayout;
+import com.example.rebuy.business.TitleLayout;
 import com.example.rebuy.business.main.adapter.MainPagerAdapter;
 import com.example.rebuy.business.main.fragment.AuctionFragment;
 import com.example.rebuy.business.main.fragment.HomeFragment;
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         mFooterBarUtils.createFooterBar(mLlayoutFooter, mTitleArr, mFooterIconArr);
         // 设置第一个被默认选中
         mFooterBarUtils.setSelected(0);
+        mTlayout.setTitleName(mTitleArr[0]);
     }
 
     private void initListener() {

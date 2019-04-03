@@ -3,23 +3,36 @@
     <dimen name="margin_s1">4dp</dimen>
     <dimen name="margin_s2">8dp</dimen>
     <dimen name="margin_s3">12dp</dimen>
+    <dimen name="margin_s6">24dp</dimen>
 
     <dimen name="padding_s1">4dp</dimen>
+    <dimen name="padding_s2">8dp</dimen>
 
     <dimen name="width_1">1dp</dimen>
+    <dimen name="width_s4">16dp</dimen>
+    <dimen name="width_s6">24dp</dimen>
+    <dimen name="width_s7">28dp</dimen>
+    <dimen name="width_s8">32dp</dimen>
     <dimen name="width_s30">120dp</dimen>
+    <dimen name="width_s35">140dp</dimen>
     <dimen name="width_s40">160dp</dimen>
     <dimen name="width_s55">220dp</dimen>
     <dimen name="width_s70">280dp</dimen>
-    <dimen name="width_s8">32dp</dimen>
 
+    <dimen name="height_s4">16dp</dimen>
+    <dimen name="height_s6">24dp</dimen>
+    <dimen name="height_s7">28dp</dimen>
     <dimen name="height_s8">32dp</dimen>
     <dimen name="height_s12">48dp</dimen>
-    <dimen name="height_14">56dp</dimen>
+    <dimen name="height_s13">52dp</dimen>
+    <dimen name="height_s14">56dp</dimen>
+    <dimen name="height_s35">140dp</dimen>
     <dimen name="height_s40">160dp</dimen>
+    <dimen name="height_s45">180dp</dimen>
     <dimen name="height_s9">36dp</dimen>
 
-    <dimen name="size_3s">12sp</dimen>
-    <dimen name="size_4s">16sp</dimen>
-    <dimen name="size_5s">20sp</dimen>
+    <dimen name="size_s2">8sp</dimen>
+    <dimen name="size_s3">12sp</dimen>
+    <dimen name="size_s4">16sp</dimen>
+    <dimen name="size_s5">20sp</dimen>
 </resources>

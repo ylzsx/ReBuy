@@ -1,4 +1,4 @@
-package com.example.rebuy;
+package com.example.rebuy.business;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.rebuy.R;
 
 /**
  * @author YangZhaoxin.

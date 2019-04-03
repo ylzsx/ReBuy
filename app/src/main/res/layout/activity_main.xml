@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".business.main.activity.MainActivity">
 
-    <com.example.rebuy.TitleLayout
+    <com.example.rebuy.business.TitleLayout
         android:id="@+id/tlayout"
         app:isShowBack="false"
         android:layout_width="match_parent"
@@ -26,6 +26,6 @@
         android:paddingTop="@dimen/padding_s1"
         android:background="@drawable/shape_rectangle"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_14"/>
+        android:layout_height="@dimen/height_s14"/>
 
 </LinearLayout>
