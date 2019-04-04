@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.rebuy.R;
 import com.example.rebuy.business.main.activity.MainActivity;
-import com.example.rebuy.business.account.model.User;
+import com.example.rebuy.business.account.model.UserModel;
 import com.example.rebuy.commom.CacheKey;
 
 
@@ -67,9 +67,9 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void toRegister(String account, String password) {
-        List<User> users = LitePal.where("account = ?", account).find(User.class);
+        List<UserModel> users = LitePal.where("account = ?", account).find(UserModel.class);
         if (users.size() == 0) {
-            User user = new User(account, password);
+            UserModel user = new UserModel(account, password);
             if (user.save()) {
                 Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(RegisterActivity.this, MainActivity.class);

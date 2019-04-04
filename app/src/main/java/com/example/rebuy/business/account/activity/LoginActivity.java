@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.rebuy.R;
 import com.example.rebuy.business.main.activity.MainActivity;
-import com.example.rebuy.business.account.model.User;
+import com.example.rebuy.business.account.model.UserModel;
 import com.example.rebuy.commom.CacheKey;
 
 import org.litepal.LitePal;
@@ -78,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
      * @param password
      */
     private void toLogin(String account, String password) {
-        List<User> users = LitePal.where("account = ?", account).find(User.class);
+        List<UserModel> users = LitePal.where("account = ?", account).find(UserModel.class);
         if (users.size() == 0) {
             Toast.makeText(this, "登录失败：尚无该用户，请先注册", Toast.LENGTH_SHORT).show();
         } else {

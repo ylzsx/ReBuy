@@ -5,129 +5,211 @@
              android:layout_height="match_parent"
              tools:context=".business.main.fragment.HomeFragment">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.youth.banner.Banner
-            android:id="@+id/banner"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_s45" />
-
         <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/height_s12">
+            android:layout_height="match_parent">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_s45" />
 
             <LinearLayout
-                android:id="@+id/llayout_look_around"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:src="@drawable/icon_look_around"
-                    android:layout_margin="@dimen/margin_s2"
-                    android:layout_width="@dimen/width_s6"
-                    android:layout_height="@dimen/height_s6"/>
-                <TextView
-                    android:text="@string/txt_look_around"
-                    android:textSize="@dimen/size_s5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_s12">
 
-            <View
-                android:background="@color/grey"
-                android:layout_width="1dp"
-                android:layout_height="match_parent" />
-
-            <LinearLayout
-                android:id="@+id/llayout_goods_delivered"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:src="@drawable/icon_goods_delivered"
-                    android:layout_margin="@dimen/margin_s2"
-                    android:layout_width="@dimen/width_s6"
-                    android:layout_height="@dimen/height_s6"/>
-                <TextView
-                    android:text="@string/txt_goods_delivered"
-                    android:textSize="@dimen/size_s5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:background="@color/light_grey"
-            android:gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_s6">
-            <ImageView
-                android:layout_marginLeft="@dimen/margin_s6"
-                android:layout_marginRight="@dimen/margin_s1"
-                android:src="@drawable/icon_wonderful_activity"
-                android:layout_width="@dimen/width_s4"
-                android:layout_height="@dimen/height_s4"/>
-            <TextView
-                android:text="@string/txt_wonderful_activity"
-                android:textSize="@dimen/size_s3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:background="@drawable/icon_festival"
-                android:layout_width="@dimen/width_s35"
-                android:layout_height="@dimen/height_s35">
                 <LinearLayout
-                    android:padding="@dimen/padding_s2"
-                    android:layout_alignParentBottom="true"
-                    android:orientation="vertical"
-                    android:background="@color/black_alpha"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/height_s13">
+                    android:id="@+id/llayout_look_around"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/icon_look_around"
+                        android:layout_margin="@dimen/margin_s2"
+                        android:layout_width="@dimen/width_s6"
+                        android:layout_height="@dimen/height_s6"/>
                     <TextView
-                        android:text="@string/txt_festival"
-                        android:textSize="@dimen/size_s3"
-                        android:textColor="@color/white"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:text="@string/txt_rebuy_festival"
-                        android:textSize="@dimen/size_s4"
-                        android:textColor="@color/white"
+                        android:text="@string/txt_look_around"
+                        android:textSize="@dimen/size_s5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
-            </RelativeLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:background="@color/light_grey"
-            android:gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/height_s6">
-            <ImageView
-                android:layout_marginLeft="@dimen/margin_s6"
-                android:layout_marginRight="@dimen/margin_s1"
-                android:src="@drawable/icon_guess_like"
-                android:layout_width="@dimen/width_s4"
-                android:layout_height="@dimen/height_s4"/>
-            <TextView
-                android:text="@string/txt_guess_like"
-                android:textSize="@dimen/size_s3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
+                <View
+                    android:background="@color/grey"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent" />
 
-    </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llayout_goods_delivered"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/icon_goods_delivered"
+                        android:layout_margin="@dimen/margin_s2"
+                        android:layout_width="@dimen/width_s6"
+                        android:layout_height="@dimen/height_s6"/>
+                    <TextView
+                        android:text="@string/txt_goods_delivered"
+                        android:textSize="@dimen/size_s5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/light_grey"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_s6">
+                <ImageView
+                    android:layout_marginLeft="@dimen/margin_s6"
+                    android:layout_marginRight="@dimen/margin_s1"
+                    android:src="@drawable/icon_wonderful_activity"
+                    android:layout_width="@dimen/width_s4"
+                    android:layout_height="@dimen/height_s4"/>
+                <TextView
+                    android:text="@string/txt_wonderful_activity"
+                    android:textSize="@dimen/size_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/act_festival"
+                    android:layout_width="@dimen/width_s40"
+                    android:layout_height="@dimen/height_s40">
+                    <LinearLayout
+                        android:padding="@dimen/padding_s2"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:background="@color/black_alpha"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_s13">
+                        <TextView
+                            android:text="@string/txt_festival"
+                            android:textSize="@dimen/size_s3"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="@string/txt_rebuy_festival"
+                            android:textSize="@dimen/size_s4"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <ImageView
+                            android:src="@drawable/act_charity_sale"
+                            android:layout_margin="@dimen/margin_s2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_margin="@dimen/margin_s2"
+                                android:text="@string/txt_charity_sale"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/size_s4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="@string/txt_gift"
+                                android:layout_marginLeft="@dimen/margin_s2"
+                                android:layout_marginRight="@dimen/margin_s3"
+                                android:textSize="@dimen/size_s3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:background="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_1" />
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <ImageView
+                            android:src="@drawable/act_drifting_bookstore"
+                            android:layout_margin="@dimen/margin_s2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_margin="@dimen/margin_s2"
+                                android:text="@string/txt_drifting_bookstore"
+                                android:textColor="@color/green"
+                                android:textSize="@dimen/size_s4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="@string/txt_drifting_together"
+                                android:layout_marginLeft="@dimen/margin_s2"
+                                android:layout_marginRight="@dimen/margin_s3"
+                                android:textSize="@dimen/size_s3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@color/light_grey"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_s6">
+                <ImageView
+                    android:layout_marginLeft="@dimen/margin_s6"
+                    android:layout_marginRight="@dimen/margin_s1"
+                    android:src="@drawable/icon_guess_like"
+                    android:layout_width="@dimen/width_s4"
+                    android:layout_height="@dimen/height_s4"/>
+                <TextView
+                    android:text="@string/txt_guess_like"
+                    android:textSize="@dimen/size_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </FrameLayout>

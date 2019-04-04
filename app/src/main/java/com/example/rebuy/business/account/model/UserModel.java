@@ -8,13 +8,13 @@ import org.litepal.crud.LitePalSupport;
  * email yangzhaoxin@hrsoft.net.
  */
 
-public class User extends LitePalSupport{
+public class UserModel extends LitePalSupport{
 
     private int id;
     private String account;
     private String password;
 
-    public User(String account, String password) {
+    public UserModel(String account, String password) {
         this.account = account;
         this.password = password;
     }

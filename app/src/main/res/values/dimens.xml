@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="margin_2">2dp</dimen>
     <dimen name="margin_s1">4dp</dimen>
     <dimen name="margin_s2">8dp</dimen>
     <dimen name="margin_s3">12dp</dimen>
@@ -9,6 +10,7 @@
     <dimen name="padding_s2">8dp</dimen>
 
     <dimen name="width_1">1dp</dimen>
+    <dimen name="width_s3">12dp</dimen>
     <dimen name="width_s4">16dp</dimen>
     <dimen name="width_s6">24dp</dimen>
     <dimen name="width_s7">28dp</dimen>
@@ -16,9 +18,13 @@
     <dimen name="width_s30">120dp</dimen>
     <dimen name="width_s35">140dp</dimen>
     <dimen name="width_s40">160dp</dimen>
+    <dimen name="width_s44">176dp</dimen>
+    <dimen name="width_s45">180dp</dimen>
     <dimen name="width_s55">220dp</dimen>
     <dimen name="width_s70">280dp</dimen>
 
+    <dimen name="height_1">1dp</dimen>
+    <dimen name="height_s3">12dp</dimen>
     <dimen name="height_s4">16dp</dimen>
     <dimen name="height_s6">24dp</dimen>
     <dimen name="height_s7">28dp</dimen>

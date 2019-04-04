@@ -22,6 +22,12 @@
     <string name="txt_guess_like">猜你喜欢</string>
     <string name="txt_festival">端午节带你High</string>
     <string name="txt_rebuy_festival">ReBuy端午节</string>
+    <string name="txt_charity_sale">大四义卖</string>
+    <string name="txt_gift">来自学长学姐最后的礼物</string>
+    <string name="txt_drifting_bookstore">漂流书屋</string>
+    <string name="txt_drifting_together">让我们一起把书漂起来~</string>
+    <string name="txt_yuan">￥</string>
+    <string name="txt_lace_dress">淑女学生蕾丝连衣裙，修身甜美小清新</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

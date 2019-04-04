@@ -4,6 +4,6 @@
     <version value="1"/>
 
     <list>
-        <mapping class="com.example.rebuy.business.account.model.User"/>
+        <mapping class="com.example.rebuy.business.account.model.UserModel"/>
     </list>
 </litepal>
