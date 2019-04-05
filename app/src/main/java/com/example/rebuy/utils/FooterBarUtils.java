@@ -29,10 +29,10 @@ public class FooterBarUtils {
         ImageView imgItemIcon;
         TextView txtItemTitle;
 
-        public ViewHolder(LinearLayout linearLayout, ImageView imgItemIcon, TextView txtItemTitle) {
-            this.mLinearLayout = linearLayout;
-            this.imgItemIcon = imgItemIcon;
-            this.txtItemTitle = txtItemTitle;
+        public ViewHolder(View itemview) {
+            this.mLinearLayout = (LinearLayout) itemview;
+            this.imgItemIcon = itemview.findViewById(R.id.img_item_icon);
+            this.txtItemTitle = itemview.findViewById(R.id.txt_item_title);
         }
     }
 
@@ -53,10 +53,8 @@ public class FooterBarUtils {
     public void createFooterBar(LinearLayout container, String[] titleArr, int[] footerIconArr) {
         mContext = container.getContext();
         for (int i = 0; i < titleArr.length; i++) {
-            LinearLayout linearLayout = (LinearLayout) View.inflate(mContext, R.layout.item_footer, null);
-            ImageView imageView = linearLayout.findViewById(R.id.img_item_icon);
-            TextView textView = linearLayout.findViewById(R.id.txt_item_title);
-            ViewHolder viewHolder = new ViewHolder(linearLayout, imageView, textView);
+            View view = View.inflate(mContext, R.layout.item_footer, null);
+            ViewHolder viewHolder = new ViewHolder(view);
 
             viewHolder.txtItemTitle.setText(titleArr[i]);
             viewHolder.imgItemIcon.setImageResource(footerIconArr[i]);
@@ -76,7 +74,7 @@ public class FooterBarUtils {
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(width, height);
             params.weight = 1;
 
-            container.addView(linearLayout, params);
+            container.addView(viewHolder.mLinearLayout, params);
 
             // 将TextView保存起来
             mViewHolders.add(viewHolder);

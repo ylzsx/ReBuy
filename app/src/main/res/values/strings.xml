@@ -28,8 +28,18 @@
     <string name="txt_drifting_together">让我们一起把书漂起来~</string>
     <string name="txt_yuan">￥</string>
     <string name="txt_lace_dress">淑女学生蕾丝连衣裙，修身甜美小清新</string>
+    
+    <!--AuctionFragment-->
+    <string name="txt_deadline">截止时间：</string>
+    <string name="txt_person_num">参与人数：</string>
 
+    <!--MessageFragment-->
+    <string name="txt_name">阿狸哈哈哈</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_cancel_order">取消订单</string>
+    <string name="txt_message_data">2016.03.05</string>
+    <string name="txt_message_time">18:22</string>
+
 </resources>

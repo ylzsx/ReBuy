@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cirimg_portrait"
+            android:src="@drawable/ic_message1"
+            android:layout_marginTop="@dimen/margin_s1"
+            android:layout_marginBottom="@dimen/margin_s1"
+            android:layout_marginRight="@dimen/margin_s1"
+            android:layout_marginLeft="@dimen/margin_s4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_s3"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_name"
+                android:text="@string/txt_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_content"
+                android:text="@string/txt_cancel_order"
+                android:textSize="@dimen/size_s4"
+                android:layout_marginTop="@dimen/margin_s1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_data"
+            android:layout_marginTop="@dimen/margin_s4"
+            android:layout_marginLeft="52dp"
+            android:text="@string/txt_message_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_marginTop="@dimen/margin_s4"
+            android:layout_marginLeft="@dimen/margin_s4"
+            android:text="@string/txt_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1" />
+</LinearLayout>

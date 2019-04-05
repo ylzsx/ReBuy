@@ -37,11 +37,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <ImageView
+                    android:id="@+id/img_heart"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="@dimen/margin_s1"
+                    android:padding="@dimen/padding_s1"
                     android:src="@drawable/selector_favorite_card"
-                    android:layout_width="@dimen/width_s3"
-                    android:layout_height="@dimen/height_s3"/>
+                    android:layout_width="@dimen/width_s5"
+                    android:layout_height="@dimen/height_s5"/>
             </RelativeLayout>
         </RelativeLayout>
         <TextView

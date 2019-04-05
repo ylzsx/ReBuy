@@ -106,7 +106,7 @@ public class HomeFragment extends Fragment {
         initGuessLikeData();
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this.getContext(), 2);
         mRecycleView.setLayoutManager(gridLayoutManager);
-        GuessLikeAdapter adapter = new GuessLikeAdapter(mGuesslikeModels);
+        GuessLikeAdapter adapter = new GuessLikeAdapter(this.getContext(), mGuesslikeModels);
         mRecycleView.setAdapter(adapter);
 
         mRecycleView.setNestedScrollingEnabled(false);

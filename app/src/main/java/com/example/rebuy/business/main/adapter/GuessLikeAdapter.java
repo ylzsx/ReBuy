@@ -14,9 +14,7 @@ import android.widget.Toast;
 import com.example.rebuy.R;
 import com.example.rebuy.business.main.model.GuessLikeModel;
 
-import java.text.DecimalFormat;
 import java.util.List;
-import java.util.Random;
 
 /**
  * @author YangZhaoxin.
@@ -29,19 +27,16 @@ public class GuessLikeAdapter extends RecyclerView.Adapter<GuessLikeAdapter.View
     private Context mContext;
     private List<GuessLikeModel> mGuessLikeModelList;
 
-    public GuessLikeAdapter(List<GuessLikeModel> guesslikeModels) {
-        mGuessLikeModelList = guesslikeModels;
-        Random random = new Random();
-        int temp = random.nextInt(5000 - 800 + 1) + 800;    // 生成800-5000的随机整数
-        double price_tmp = (double) temp / 10;
-        DecimalFormat decimalFormat = new DecimalFormat("0.00");
-        String price = decimalFormat.format(price_tmp);
+    public GuessLikeAdapter(Context context, List<GuessLikeModel> guessLikeModelList) {
+        mContext = context;
+        mGuessLikeModelList = guessLikeModelList;
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder{
         CardView mLlayoutGuessLike;
         TextView mTxtPrice;
         TextView mTxtContent;
+        ImageView mImgHeart;
         ImageView mImgAuction;
         ImageView mImgExchange;
         ImageView mImgSell;
@@ -51,6 +46,7 @@ public class GuessLikeAdapter extends RecyclerView.Adapter<GuessLikeAdapter.View
             mLlayoutGuessLike = (CardView) itemView;
             mTxtPrice = itemView.findViewById(R.id.txt_price);
             mTxtContent = itemView.findViewById(R.id.txt_content);
+            mImgHeart = itemView.findViewById(R.id.img_heart);
             mImgAuction = itemView.findViewById(R.id.img_type_auction);
             mImgExchange = itemView.findViewById(R.id.img_type_exchange);
             mImgSell = itemView.findViewById(R.id.img_type_sell);
@@ -69,6 +65,16 @@ public class GuessLikeAdapter extends RecyclerView.Adapter<GuessLikeAdapter.View
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext, "点到了我", Toast.LENGTH_SHORT).show();
+            }
+        });
+        viewHolder.mImgHeart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.isSelected()) {
+                    v.setSelected(false);
+                } else {
+                    v.setSelected(true);
+                }
             }
         });
         return viewHolder;
