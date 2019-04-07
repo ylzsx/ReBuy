@@ -27,6 +27,14 @@
         </activity>
         <activity android:name=".business.main.activity.GoodsDetailActivity">
         </activity>
+        <activity
+            android:name=".business.main.activity.PublishMessageActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+        <activity android:name=".business.main.activity.MessageDetailActivity">
+        </activity>
+        <activity android:name=".business.mine.activity.PersonalInfoActivity">
+        </activity>
     </application>
 
 </manifest>

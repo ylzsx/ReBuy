@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.rebuy.business.TitleLayout
+        app:isShowBack="true"
+        app:titleName="@string/txt_publish_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s12"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:hint="@string/hint_publish_title"
+                android:layout_margin="@dimen/margin_s2"
+                android:background="@null"
+                android:theme="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"/>
+
+            <EditText
+                android:hint="@string/txt_publish_describe"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:background="@null"
+                android:theme="@style/MyEditText"
+                android:layout_margin="@dimen/margin_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_s20"/>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <View
+                android:background="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_s2"/>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_phone"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="@string/hint_publish_click_input"
+                    android:textSize="@dimen/size_s4"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_qq"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="@string/hint_publish_click_input"
+                    android:textSize="@dimen/size_s4"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_classification"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_sale"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:layout_gravity="center_vertical"
+                    android:theme="@style/MyCheckBox"
+                    android:text="@string/cb_publish_buy"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/cb_publish_sell"
+                    android:theme="@style/MyCheckBox"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:layout_gravity="center_vertical"
+                    android:theme="@style/MyCheckBox"
+                    android:text="@string/cb_publish_auction"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_yikoujia"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="@string/hint_publish_click_input"
+                    android:textSize="@dimen/size_s4"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s20">
+                <TextView
+                    android:text="@string/txt_exchange"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="@string/hint_publish_click_input"
+                    android:textSize="@dimen/size_s4"
+                    android:gravity="top"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_s20"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_number"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:hint="@string/hint_publish_click_input"
+                    android:textSize="@dimen/size_s4"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_auction"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="@string/txt_publish_start_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:textSize="@dimen/size_s4"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="@dimen/width_s25"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:text="@string/txt_publish_add_price"
+                    android:layout_marginLeft="@dimen/margin_s8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:textSize="@dimen/size_s4"
+                    android:theme="@style/MyEditText"
+                    android:layout_width="@dimen/width_s25"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/padding_s2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_s10">
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_end_time"
+                    android:textColor="@color/light_yellow"
+                    android:textSize="@dimen/size_s4"
+                    android:layout_width="@dimen/width_s18"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/txt_publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s12">
+
+        <View
+            android:background="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1"/>
+
+        <TextView
+            android:gravity="center"
+            android:text="@string/txt_confirm_release"
+            android:textSize="@dimen/size_s5"
+            android:textColor="@color/white"
+            android:background="@color/dark_red"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/padding_s7"
+            android:paddingRight="@dimen/padding_s7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

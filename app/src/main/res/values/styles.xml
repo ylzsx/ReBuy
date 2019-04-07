@@ -22,5 +22,4 @@
         <item name="android:textSize">@dimen/size_s3</item>
         <item name="android:background">@drawable/shape_rectangle_with_radius</item>
     </style>
-
 </resources>

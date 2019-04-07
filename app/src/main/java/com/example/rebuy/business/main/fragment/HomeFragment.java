@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import com.example.rebuy.R;
 import com.example.rebuy.business.GlideImageLoder;
 import com.example.rebuy.business.main.activity.LookAroundActivity;
+import com.example.rebuy.business.main.activity.PublishMessageActivity;
 import com.example.rebuy.business.main.adapter.GuessLikeAdapter;
 import com.example.rebuy.business.main.model.GuessLikeModel;
 import com.youth.banner.Banner;
@@ -75,6 +76,8 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
                 break;
             case R.id.llayout_goods_delivered:
+                Intent intent1 = new Intent(this.getActivity(), PublishMessageActivity.class);
+                startActivity(intent1);
                 break;
         }
     }

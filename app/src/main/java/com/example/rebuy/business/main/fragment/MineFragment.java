@@ -1,6 +1,7 @@
 package com.example.rebuy.business.main.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.rebuy.R;
+import com.example.rebuy.business.mine.activity.PersonalInfoActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -52,6 +54,8 @@ public class MineFragment extends Fragment {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.llayout_personal_info:
+                Intent intent = new Intent(this.getActivity(), PersonalInfoActivity.class);
+                startActivity(intent);
                 break;
             case R.id.llayout_shop:
                 break;

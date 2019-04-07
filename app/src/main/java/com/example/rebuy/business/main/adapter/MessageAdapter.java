@@ -1,6 +1,7 @@
 package com.example.rebuy.business.main.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,9 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.rebuy.R;
+import com.example.rebuy.business.main.activity.MessageDetailActivity;
 import com.example.rebuy.business.main.model.MessageModel;
 
 import java.util.ArrayList;
@@ -66,7 +67,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull MessageAdapter.ViewHolder viewHolder, int i) {
-        MessageModel messageModel = mMessageModelList.get(i);
+        final MessageModel messageModel = mMessageModelList.get(i);
         viewHolder.mImgPortrait.setImageResource(messageModel.getPortrait());
         viewHolder.mTxtName.setText(messageModel.getName());
         viewHolder.mTxtContent.setText(messageModel.getContent());
@@ -75,7 +76,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         viewHolder.mLlayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "点到我了", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mContext, MessageDetailActivity.class);
+                intent.putExtra(MessageDetailActivity.IMG, messageModel.getPortrait());
+                intent.putExtra(MessageDetailActivity.NAME, messageModel.getName());
+                intent.putExtra(MessageDetailActivity.TIME, messageModel.getTime());
+                intent.putExtra(MessageDetailActivity.DATE, messageModel.getDate());
+                intent.putExtra(MessageDetailActivity.CONTENT, messageModel.getContent());
+                mContext.startActivity(intent);
             }
         });
     }

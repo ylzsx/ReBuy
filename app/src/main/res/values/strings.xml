@@ -77,4 +77,43 @@
     <string name="txt_book2">2.《啊呀呀呀呀呀呀呀呀啊呀呀呀》</string>
     <string name="txt_book3">3.《AD动手大赛第十大苏打赛上的大赛得分》</string>
 
+    <!--PublishMessageActivity-->
+    <string name="txt_publish_message">发布消息</string>
+    <string name="txt_confirm_release">确认发布</string>
+    <string name="hint_publish_title">标题</string>
+    <string name="txt_publish_describe">描述一下你的物品</string>
+    <string name="txt_publish_phone">电话</string>
+    <string name="hint_publish_click_input">点击输入</string>
+    <string name="txt_publish_qq">QQ号</string>
+    <string name="txt_publish_classification">分类</string>
+    <string name="txt_publish_sale">出售方式</string>
+    <string name="cb_publish_buy">买东西</string>
+    <string name="cb_publish_sell">换东西</string>
+    <string name="cb_publish_auction">拍卖</string>
+    <string name="txt_publish_number">数量</string>
+    <string name="txt_publish_auction">拍卖</string>
+    <string name="txt_publish_start_price">起价</string>
+    <string name="txt_publish_add_price">加价</string>
+    <string name="txt_publish_end_time">结束时间</string>
+    <string name="txt_publish_time">2015-11-12 11:11</string>
+
+    <!--MessageDetailActivity-->
+    <string name="txt_message_detail">消息详情</string>
+    <string name="time_2015_11_04">2015.11.04</string>
+    <string name="num_10000">10000</string>
+    <string name="txt_application">申请：</string>
+    <string name="txt_application_reason">不想要了，就是这么任性</string>
+    <string name="txt_reason">原因：</string>
+    <string name="txt_agree_application">同意申请</string>
+
+    <!--PersonInfoActivity-->
+    <string name="txt_personal_data">个人资料</string>
+    <string name="txt_info_nickname">昵称</string>
+    <string name="txt_info_phone">手机号</string>
+    <string name="phone_18712345678">18712345678</string>
+    <string name="txt_info_qq">QQ</string>
+    <string name="num_123456789">123456789</string>
+    <string name="txt_info_signature">个性签名</string>
+    <string name="txt_signature">这是我的个性签名啊</string>
+    <string name="txt_info_portrait">头像</string>
 </resources>
