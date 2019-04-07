@@ -12,6 +12,7 @@ public class AuctionModel {
     private double price;
     private String deadline;
     private int personNum;
+    private boolean favorite = false;
 
     public AuctionModel() {
     }
@@ -53,5 +54,13 @@ public class AuctionModel {
 
     public void setPersonNum(int personNum) {
         this.personNum = personNum;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
     }
 }

@@ -15,12 +15,17 @@
         <activity android:name=".business.account.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".business.account.activity.LoginActivity">
         </activity>
         <activity android:name=".business.account.activity.RegisterActivity">
+        </activity>
+        <activity android:name=".business.main.activity.LookAroundActivity">
+        </activity>
+        <activity android:name=".business.main.activity.GoodsDetailActivity">
         </activity>
     </application>
 

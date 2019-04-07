@@ -1,6 +1,7 @@
 package com.example.rebuy.business.main.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -9,9 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.rebuy.R;
+import com.example.rebuy.business.main.activity.GoodsDetailActivity;
 import com.example.rebuy.business.main.model.GuessLikeModel;
 
 import java.util.List;
@@ -61,22 +62,6 @@ public class GuessLikeAdapter extends RecyclerView.Adapter<GuessLikeAdapter.View
         }
         View view = LayoutInflater.from(mContext).inflate(R.layout.item_guess_like, viewGroup,false);
         ViewHolder viewHolder = new ViewHolder(view);
-        viewHolder.mLlayoutGuessLike.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(mContext, "点到了我", Toast.LENGTH_SHORT).show();
-            }
-        });
-        viewHolder.mImgHeart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (v.isSelected()) {
-                    v.setSelected(false);
-                } else {
-                    v.setSelected(true);
-                }
-            }
-        });
         return viewHolder;
     }
 
@@ -102,6 +87,25 @@ public class GuessLikeAdapter extends RecyclerView.Adapter<GuessLikeAdapter.View
         } else {
             viewHolder.mImgSell.setVisibility(View.GONE);
         }
+
+        viewHolder.mImgHeart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.isSelected()) {
+                    v.setSelected(false);
+                } else {
+                    v.setSelected(true);
+                }
+            }
+        });
+
+        viewHolder.mLlayoutGuessLike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, GoodsDetailActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -5,10 +5,195 @@
              android:layout_height="match_parent"
              tools:context=".business.main.fragment.MineFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/ic_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/white_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_s40">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/ic_head"
+                    android:layout_margin="@dimen/margin_s8"
+                    android:layout_width="@dimen/width_s20"
+                    android:layout_height="@dimen/height_s20"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/txt_head_name"
+                        android:textSize="@dimen/size_s5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="@string/txt_personal_signature"
+                        android:lines="2"
+                        android:ellipsize="end"
+                        android:maxEms="13"
+                        android:layout_marginRight="@dimen/margin_s2"
+                        android:layout_marginTop="@dimen/margin_s2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s2"/>
+
+        <LinearLayout
+            android:id="@+id/llayout_personal_info"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s12">
+            <ImageView
+                android:src="@drawable/ic_personal_info"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_personality_data"
+                android:textSize="@dimen/size_s4"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s18"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_s47"
+                android:src="@drawable/ic_to"
+                android:layout_width="@dimen/width_s4"
+                android:layout_height="@dimen/height_s4"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1" />
+
+        <LinearLayout
+            android:id="@+id/llayout_shop"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s12">
+            <ImageView
+                android:src="@drawable/ic_shop"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_shop"
+                android:textSize="@dimen/size_s4"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s18"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_s47"
+                android:src="@drawable/ic_to"
+                android:layout_width="@dimen/width_s4"
+                android:layout_height="@dimen/height_s4"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1" />
+
+        <LinearLayout
+            android:id="@+id/llayout_order"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s12">
+            <ImageView
+                android:src="@drawable/ic_order"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_order"
+                android:textSize="@dimen/size_s4"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s18"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_s47"
+                android:src="@drawable/ic_to"
+                android:layout_width="@dimen/width_s4"
+                android:layout_height="@dimen/height_s4"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s2"/>
+
+        <LinearLayout
+            android:id="@+id/llayout_collection"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s12">
+            <ImageView
+                android:src="@drawable/ic_collection"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_collection"
+                android:textSize="@dimen/size_s4"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s18"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_s47"
+                android:src="@drawable/ic_to"
+                android:layout_width="@dimen/width_s4"
+                android:layout_height="@dimen/height_s4"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1" />
+
+        <LinearLayout
+            android:id="@+id/llayout_setting"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_s12">
+            <ImageView
+                android:src="@drawable/ic_setting"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_setting"
+                android:textSize="@dimen/size_s4"
+                android:layout_marginLeft="@dimen/margin_s4"
+                android:layout_width="@dimen/width_s18"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginLeft="@dimen/margin_s47"
+                android:src="@drawable/ic_to"
+                android:layout_width="@dimen/width_s4"
+                android:layout_height="@dimen/height_s4"/>
+        </LinearLayout>
+
+        <View
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
 </FrameLayout>

@@ -28,18 +28,53 @@
     <string name="txt_drifting_together">让我们一起把书漂起来~</string>
     <string name="txt_yuan">￥</string>
     <string name="txt_lace_dress">淑女学生蕾丝连衣裙，修身甜美小清新</string>
-    
+
     <!--AuctionFragment-->
     <string name="txt_deadline">截止时间：</string>
     <string name="txt_person_num">参与人数：</string>
 
     <!--MessageFragment-->
     <string name="txt_name">阿狸哈哈哈</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="txt_cancel_order">取消订单</string>
     <string name="txt_message_data">2016.03.05</string>
     <string name="txt_message_time">18:22</string>
+
+    <!--MineFragment-->
+    <string name="txt_head_name">大脸猫</string>
+    <string name="txt_personal_signature">大脸猫大脸猫爱吃鱼，这是一条很有个性的个性签名</string>
+    <string name="txt_personality_data">个人资料</string>
+    <string name="txt_shop">我的小店</string>
+    <string name="txt_order">我的订单</string>
+    <string name="txt_collection">我的收藏</string>
+    <string name="txt_setting">设置</string>
+
+    <!--LookAroundActivity-->
+    <string name="txt_yikoujia">一口价</string>
+    <string name="txt_exchange">物换物</string>
+    <string name="txt_auction">拍卖品</string>
+    <string name="txt_life_use">生活用品</string>
+    <string name="txt_study_use">学习用品</string>
+    <string name="txt_clothes_shoe">服饰鞋包</string>
+    <string name="txt_electronic">数码产品</string>
+    <string name="txt_other">&#160;&#160;&#160;&#160;其他&#160;&#160;&#160;&#160;</string>
+    <string name="num_million">1000000</string>
+    <string name="num_995">995</string>
+
+    <!--GoodsDetailActivity-->
+    <string name="txt_goods_detail">商品详情</string>
+    <string name="txt_contact_seller">联系卖家</string>
+    <string name="txt_auction_price">竞拍价</string>
+    <string name="txt_buy_clothes_title">这是一个买衣服的标题类的东西我希望他一行是十七个字，两行</string>
+    <string name="txt_add_price">每次加价￥2元</string>
+    <string name="txt_bala">巴拉巴啦啦巴巴</string>
+    <string name="txt_grade">13级</string>
+    <string name="txt_major">计算机科学与技术</string>
+    <string name="txt_telphone">Tel:11122223333</string>
+    <string name="txt_qq">QQ:1234567890</string>
+    <string name="txt_before_time">25分钟前</string>
+    <string name="txt_introduction">这是那个东西的介绍文案，就是要介绍很多很多一行差不多有二十三个字，行数不限，对，就是不限</string>
+    <string name="txt_book1">1.《哈哈哈哈哈哈哈》</string>
+    <string name="txt_book2">2.《啊呀呀呀呀呀呀呀呀啊呀呀呀》</string>
+    <string name="txt_book3">3.《AD动手大赛第十大苏打赛上的大赛得分》</string>
 
 </resources>

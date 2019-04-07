@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business.main.activity.LookAroundActivity">
+
+    <com.example.rebuy.business.TitleLayout
+        app:titleName="@string/txt_look_around"
+        app:isShowBack="true"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s12"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s12">
+
+        <LinearLayout
+            android:id="@+id/llayout_yikoujia"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/icon_yikoujia"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_yikoujia"
+                android:layout_marginLeft="@dimen/margin_s2"
+                android:textSize="@dimen/size_s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/yellow"
+            android:layout_width="@dimen/width_1"
+            android:layout_height="@dimen/height_s8" />
+
+        <LinearLayout
+            android:id="@+id/llayout_exchange"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_exchange"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_exchange"
+                android:layout_marginLeft="@dimen/margin_s2"
+                android:textSize="@dimen/size_s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/yellow"
+            android:layout_width="@dimen/width_1"
+            android:layout_height="@dimen/height_s8" />
+
+        <LinearLayout
+            android:id="@+id/llayout_auction"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ic_auction"
+                android:layout_width="@dimen/width_s8"
+                android:layout_height="@dimen/height_s8"/>
+            <TextView
+                android:text="@string/txt_auction"
+                android:layout_marginLeft="@dimen/margin_s2"
+                android:textSize="@dimen/size_s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s1">
+        <View
+            android:id="@+id/view_yikoujia"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/view_exchange"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/view_auction"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s8">
+
+        <TextView
+            style="@style/SmallLabel"
+            android:text="@string/txt_life_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/SmallLabel"
+            android:text="@string/txt_study_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/SmallLabel"
+            android:text="@string/txt_clothes_shoe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/SmallLabel"
+            android:text="@string/txt_electronic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            style="@style/SmallLabel"
+            android:text="@string/txt_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

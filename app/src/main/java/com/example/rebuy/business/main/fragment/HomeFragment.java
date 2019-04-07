@@ -1,6 +1,7 @@
 package com.example.rebuy.business.main.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.example.rebuy.R;
 import com.example.rebuy.business.GlideImageLoder;
+import com.example.rebuy.business.main.activity.LookAroundActivity;
 import com.example.rebuy.business.main.adapter.GuessLikeAdapter;
 import com.example.rebuy.business.main.model.GuessLikeModel;
 import com.youth.banner.Banner;
@@ -67,13 +68,14 @@ public class HomeFragment extends Fragment {
     }
 
     @OnClick({R.id.llayout_look_around, R.id.llayout_goods_delivered})
-    public void onClickedView(View view) {
+    public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.llayout_look_around:
-                Toast.makeText(this.getContext(), "随便逛逛", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this.getActivity(), LookAroundActivity.class);
+                startActivity(intent);
                 break;
             case R.id.llayout_goods_delivered:
-                Toast.makeText(this.getContext(), "有货出手", Toast.LENGTH_SHORT).show();
+                break;
         }
     }
 
@@ -143,4 +145,5 @@ public class HomeFragment extends Fragment {
         super.onDestroyView();
         unbinder.unbind();
     }
+
 }

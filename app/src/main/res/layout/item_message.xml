@@ -17,8 +17,8 @@
             android:layout_marginBottom="@dimen/margin_s1"
             android:layout_marginRight="@dimen/margin_s1"
             android:layout_marginLeft="@dimen/margin_s4"
-            android:layout_width="60dp"
-            android:layout_height="60dp"/>
+            android:layout_width="@dimen/width_s15"
+            android:layout_height="@dimen/height_s15"/>
 
         <LinearLayout
             android:gravity="center_vertical"
