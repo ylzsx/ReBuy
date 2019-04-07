@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.rebuy.business.TitleLayout
+        app:isShowBack="true"
+        app:titleName="@string/txt_myOrder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_s12"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        app:tabIndicatorColor="@color/yellow"
+        app:tabIndicatorHeight="@dimen/height_2"
+        app:tabTextColor="@color/grey"
+        app:tabSelectedTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

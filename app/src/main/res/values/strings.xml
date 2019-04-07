@@ -116,4 +116,14 @@
     <string name="txt_info_signature">个性签名</string>
     <string name="txt_signature">这是我的个性签名啊</string>
     <string name="txt_info_portrait">头像</string>
+
+    <!--MineOrderAdapter-->
+    <string name="txt_myOrder">我的订单</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_mine_shop">阿狸的小店</string>
+    <string name="txt_mine_on_sale">在售商品5件</string>
+    <string name="txt_mine_had_sale">已售商品10件</string>
+    <string name="txt_mine_shop_introduction">这是店铺的介绍，，物美价廉，经济实惠，总之就是很多很多介绍</string>
 </resources>

@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.rebuy.R;
+import com.example.rebuy.business.mine.activity.MineOrderActivity;
+import com.example.rebuy.business.mine.activity.MineShopActivity;
 import com.example.rebuy.business.mine.activity.PersonalInfoActivity;
 
 import butterknife.BindView;
@@ -58,8 +60,12 @@ public class MineFragment extends Fragment {
                 startActivity(intent);
                 break;
             case R.id.llayout_shop:
+                Intent intent1 = new Intent(this.getActivity(), MineShopActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.llayout_order:
+                Intent intent2 = new Intent(this.getActivity(), MineOrderActivity.class);
+                startActivity(intent2);
                 break;
             case R.id.llayout_collection:
                 break;
