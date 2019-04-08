@@ -7,6 +7,7 @@
     <dimen name="margin_s4">16dp</dimen>
     <dimen name="margin_s6">24dp</dimen>
     <dimen name="margin_s8">32dp</dimen>
+    <dimen name="margin_s25">100dp</dimen>
     <dimen name="margin_s32">128dp</dimen>
     <dimen name="margin_s47">188dp</dimen>
     <dimen name="margin_s50">200dp</dimen>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/pic_sold"
+            android:layout_width="@dimen/width_s35"
+            android:layout_height="@dimen/height_s35"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/txt_lace_dress"
+                android:layout_margin="@dimen/margin_s2"
+                android:textSize="@dimen/size_s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_type_auction"
+                    android:src="@drawable/icon_type_auction"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="@dimen/margin_s2"
+                    android:layout_marginRight="@dimen/margin_s1"
+                    android:layout_marginTop="@dimen/margin_s1"
+                    android:layout_marginBottom="@dimen/margin_s1"
+                    android:layout_width="@dimen/width_s8"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/img_type_exchange"
+                    android:src="@drawable/icon_type_exchange"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="@dimen/margin_s1"
+                    android:layout_width="@dimen/width_s8"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/img_type_sell"
+                    android:src="@drawable/icon_type_sell"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="@dimen/margin_s1"
+                    android:layout_width="@dimen/width_s8"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_yuan"
+                    android:text="@string/txt_yuan"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_s5"
+                    android:layout_marginLeft="@dimen/margin_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="@string/num_million"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_s5"
+                    android:layout_toRightOf="@id/txt_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_s2"
+                android:layout_marginLeft="@dimen/margin_s2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_eye"
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/width_s4"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/num_995"
+                    android:layout_marginLeft="@dimen/margin_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="@string/txt_mine_finish"
+                    android:layout_marginLeft="@dimen/margin_s25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_2" />
+</LinearLayout>

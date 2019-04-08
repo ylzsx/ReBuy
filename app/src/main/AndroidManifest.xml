@@ -39,6 +39,8 @@
         </activity>
         <activity android:name=".business.mine.activity.MineShopActivity">
         </activity>
+        <activity android:name=".business.mine.activity.MineCollectionActivity">
+        </activity>
     </application>
 
 </manifest>
