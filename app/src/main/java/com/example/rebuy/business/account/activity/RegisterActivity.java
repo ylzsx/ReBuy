@@ -10,10 +10,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.rebuy.R;
-import com.example.rebuy.business.main.activity.MainActivity;
 import com.example.rebuy.business.account.model.UserModel;
+import com.example.rebuy.business.main.activity.MainActivity;
 import com.example.rebuy.commom.CacheKey;
-
 
 import org.litepal.LitePal;
 
@@ -73,12 +72,12 @@ public class RegisterActivity extends AppCompatActivity {
             if (user.save()) {
                 Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
-                startActivity(intent);
                 // 保存登录状态
                 SharedPreferences.Editor editor = getSharedPreferences(CacheKey.FILE_NAME, MODE_PRIVATE).edit();
-                editor.putString(CacheKey.TOKEN, String.valueOf(users.get(0).getId()));
+                editor.putString(CacheKey.TOKEN,"" + user.getId());
                 editor.apply();
 
+                startActivity(intent);
                 finish();
             } else {
                 Toast.makeText(this, "注册失败", Toast.LENGTH_SHORT).show();

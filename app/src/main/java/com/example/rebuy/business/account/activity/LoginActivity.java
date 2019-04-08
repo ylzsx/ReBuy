@@ -85,12 +85,12 @@ public class LoginActivity extends AppCompatActivity {
             if (password.equals(users.get(0).getPassword())) {
                 Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                startActivity(intent);
                 // 保存登录状态
                 SharedPreferences.Editor editor = getSharedPreferences(CacheKey.FILE_NAME, MODE_PRIVATE).edit();
                 editor.putString(CacheKey.TOKEN, String.valueOf(users.get(0).getId()));
                 editor.apply();
 
+                startActivity(intent);
                 finish();
             } else {
                 Toast.makeText(this, "登录失败：密码错误", Toast.LENGTH_SHORT).show();

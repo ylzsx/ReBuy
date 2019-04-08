@@ -41,6 +41,8 @@
         </activity>
         <activity android:name=".business.mine.activity.MineCollectionActivity">
         </activity>
+        <activity android:name=".business.mine.activity.MineSettingActivity">
+        </activity>
     </application>
 
 </manifest>

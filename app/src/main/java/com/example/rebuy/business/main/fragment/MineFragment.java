@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import com.example.rebuy.R;
 import com.example.rebuy.business.mine.activity.MineCollectionActivity;
 import com.example.rebuy.business.mine.activity.MineOrderActivity;
+import com.example.rebuy.business.mine.activity.MineSettingActivity;
 import com.example.rebuy.business.mine.activity.MineShopActivity;
 import com.example.rebuy.business.mine.activity.PersonalInfoActivity;
 
@@ -73,6 +74,8 @@ public class MineFragment extends Fragment {
                 startActivity(intent3);
                 break;
             case R.id.llayout_setting:
+                Intent intent4 = new Intent(this.getActivity(), MineSettingActivity.class);
+                startActivity(intent4);
                 break;
         }
     }
