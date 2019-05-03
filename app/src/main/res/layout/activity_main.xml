@@ -6,9 +6,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".business.main.activity.MainActivity">
+    tools:context=".business.main.MainActivity">
 
-    <com.example.rebuy.business.TitleLayout
+    <com.example.rebuy.widget.TitleLayout
         android:id="@+id/tlayout"
         app:isShowBack="false"
         android:layout_width="match_parent"

@@ -6,8 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.rebuy.R;
-import com.example.rebuy.business.main.adapter.AuctionAdapter;
-import com.example.rebuy.business.main.model.AuctionModel;
+import com.example.rebuy.business.auction.adapter.AuctionAdapter;
+import com.example.rebuy.business.auction.model.AuctionModel;
 
 import java.util.ArrayList;
 import java.util.List;

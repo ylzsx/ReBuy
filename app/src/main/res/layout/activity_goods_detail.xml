@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.rebuy.business.TitleLayout
+    <com.example.rebuy.widget.TitleLayout
         app:isShowBack="true"
         app:titleName="@string/txt_goods_detail"
         android:layout_width="match_parent"

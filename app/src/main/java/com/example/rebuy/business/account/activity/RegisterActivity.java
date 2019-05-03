@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.rebuy.R;
 import com.example.rebuy.business.account.model.UserModel;
-import com.example.rebuy.business.main.activity.MainActivity;
+import com.example.rebuy.business.main.MainActivity;
 import com.example.rebuy.commom.CacheKey;
 
 import org.litepal.LitePal;

@@ -10,7 +10,7 @@
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".business.main.activity.MainActivity">
+        <activity android:name=".business.main.MainActivity">
         </activity>
         <activity android:name=".business.account.activity.SplashActivity">
             <intent-filter>
@@ -23,15 +23,15 @@
         </activity>
         <activity android:name=".business.account.activity.RegisterActivity">
         </activity>
-        <activity android:name=".business.main.activity.LookAroundActivity">
+        <activity android:name=".business.home.activity.LookAroundActivity">
         </activity>
-        <activity android:name=".business.main.activity.GoodsDetailActivity">
+        <activity android:name=".business.detail.GoodsDetailActivity">
         </activity>
         <activity
-            android:name=".business.main.activity.PublishMessageActivity"
+            android:name=".business.home.activity.PublishMessageActivity"
             android:windowSoftInputMode="stateVisible|adjustResize">
         </activity>
-        <activity android:name=".business.main.activity.MessageDetailActivity">
+        <activity android:name=".business.message.activity.MessageDetailActivity">
         </activity>
         <activity android:name=".business.mine.activity.PersonalInfoActivity">
         </activity>
